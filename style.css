@@ -37,7 +37,7 @@ body{
     font-size: 100%;
     line-height: 1.4;
 	font-family: 'Pretendard Variable';
-    letter-spacing: -1.5%;
+    letter-spacing: -0.25px;
 
 }
 
@@ -100,7 +100,8 @@ nav ul li:nth-child(2){
 .hero .left .name{
     display: flex;
     font-size: clamp(3.5rem, 7.5vw, 6rem);
-    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -2px;
 }
 
 .hero .right .history{
@@ -139,7 +140,7 @@ section h2{
     padding-top: 5px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .skill ul li{
@@ -268,13 +269,12 @@ footer{
     inset: 0;
     background: rgba(0,0,0,0.7);
     justify-content: center;
-    align-content: center;
 }
 
-.modal{
-    max-width: 40vw;
+.modal{ 
+    max-width: 50vw;
     max-height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;   
 }
 
 .modal .modal-img{
@@ -327,7 +327,10 @@ footer{
 
     .tab1_content .imgBox img:hover{
         width: 100%;
-}
+    }
+    .overlay{
+        align-items: center;
+    }
 }
 
 /* Mobile */
@@ -343,9 +346,6 @@ footer{
     }
     .wrapper{
         width: 90%;
-    }
-    .skill ul{
-        gap: 14px;
     }
     section{
         padding: 30px 0 60px;
@@ -388,6 +388,9 @@ footer{
 
     .enter{
         display: none;
+    }
+    .overlay{
+        align-items: center;
     }
 }
 
