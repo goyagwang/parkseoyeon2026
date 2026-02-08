@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol, dl{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+:root{
+    --color-1: #EDF1F0;
+    --color-2: #493BE5;
+}
+
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url('./woff2/PretendardVariable.woff2') format('woff2-variations');
+}
+
+body{
+    margin: 0 auto;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-size: 100%;
+    line-height: 1.4;
+	font-family: 'Pretendard Variable';
+    letter-spacing: -1.5%;
+
+}
+
+::selection{
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+header{
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+nav{
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    font-weight: normal;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    display: inline-block;
+}
+
+nav ul li:nth-child(2){
+    margin-left: 40px;
+}
+
+.hero{
+    padding: 10% 0;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero .right{
+    max-width: 650px;
+}
+
+.hero .right p{
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+}
+
+.hero .left span{
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+.hero .left .name{
+    display: flex;
+    font-size: clamp(3.5rem, 7.5vw, 6rem);
+    line-height: 1;
+}
+
+.hero .right .history{
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    margin-top: 50px;
+    line-height: 1.6;
+}
+
+.hero .right .history .title{
+    font-size: clamp(1.5rem, 2.5vw, 1.75rem);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero .right .history span{
+font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+section{
+    background-color: #fff;
+    padding: 60px 0 80px;
+}
+
+.wrapper{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+section h2{
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 2.5vw, 1.75rem);
+    padding-bottom: 30px;
+}
+
+.skill ul{
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill ul li{
+    border: 1px solid var(--color-2);
+    padding: 6px 20px;
+    border-radius: 999px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tabs li a {
+    display: block;
+    padding: 10px 0 4px;
+    margin-right: 30px;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+}
+
+.active a {
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-2);
+}
+
+.tab_content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 0 0;
+}
+
+#tab2 a{
+    display: block;
+    max-width: 400px;
+    max-height: 460px;
+    overflow: hidden;
+}
+
+.tab_content a img{
+    width: 100%;
+}
+
+.tab1_content{
+    width: 400px;
+    height: 460px;
+    position: relative;
+}
+
+.tab1_content .imgBox{
+    overflow: hidden;
+    width: 100%;
+    height: 220px;
+}
+
+.tab1_content .imgBox img{
+    width: 100%;
+}
+
+.tab1_content .imgBox img:hover{
+    width: 110%;
+    transition: all 0.3s ;
+}
+
+.tab1_content .textBox{
+    padding: 20px 0;
+}
+
+.tab1_content .textBox p{
+    margin: 0.875rem 0;
+}
+.tab1_content .textBox .skillBox{
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.tab1_content .textBox p:nth-child(1){
+    font-size: clamp(1.125rem, 2.5vw, 1.125rem);
+    font-weight: 700;
+    margin: 0;
+}
+
+.tab1_content .textBox .skillBox span{
+    display: inline-block;
+    font-size: clamp(0.875rem, 2.5vw, 0.875rem);
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--color-1);
+    color: var(--color-2)
+}
+
+.tab1_content .textBox .btn{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border-radius: 999px;
+    padding: 8px 20px;
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+}
+
+.tab1_content .textBox .btn:hover{
+    opacity: 50%;
+    transition: all 0.3s;
+}
+
+.contact{
+    background-color: var(--color-1);
+}
+
+.contact p{
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+}
+
+footer{
+    padding: 20px 0;
+}
+
+/* Popup */
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-content: center;
+}
+
+.modal{
+    max-width: 40vw;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.modal .modal-img{
+    max-width: 100%;
+}
+
+.overlay.open {
+  display: flex;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+        header{
+        width: 90%;
+    }
+    .wrapper{
+        width: 90%;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header{
+        width: 90%;
+    }
+    .wrapper{
+        width: 90%;
+    }
+
+    #tab2 a{
+    max-width: 100%;
+    max-height: 100%;
+    }
+
+    .tab1_content{
+        width: 100%;
+        height: 100%;
+    }
+
+    .tab1_content .imgBox{
+        overflow: hidden;
+        width: 100%;
+        height: fit-content;
+    }
+    .tab1_content .textBox .btn{
+        position: static;
+        margin-top: 0.875rem;
+    }
+
+    .tab1_content .imgBox img:hover{
+        width: 100%;
+}
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    header{
+         max-width: 90%;
+    }
+    header ul li:nth-child(2){
+        margin-left: 16px;
+    }
+    .hero .right .intro{
+    margin-top: 20px;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    .skill ul{
+        gap: 14px;
+    }
+    section{
+        padding: 30px 0 60px;
+    }
+
+    #tab2 a{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    }
+
+    .tab1_content{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .tab1_content .imgBox{
+        overflow: hidden;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .tab1_content .textBox .btn{
+        position: static;
+        margin-top: 0.875rem;
+    }
+
+    .tab1_content .imgBox img:hover{
+        width: 100%;
+    }
+
+    .hero .right .history span{
+        display: block;
+    }
+
+    .hero .right .history .content{
+        margin-bottom: 0.875rem;
+    }
+
+    .enter{
+        display: none;
+    }
+}
+
