@@ -20,6 +20,7 @@ a{
 :root{
     --color-1: #EDF1F0;
     --color-2: #493BE5;
+
 }
 
 @font-face {
@@ -267,7 +268,7 @@ footer{
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     justify-content: center;
 }
 
@@ -328,8 +329,9 @@ footer{
     .tab1_content .imgBox img:hover{
         width: 100%;
     }
-    .overlay{
-        inset: 1;
+
+    .overlay.open{
+    display: none;
     }
 }
 
@@ -390,8 +392,8 @@ footer{
         display: none;
     }
 
-    .overlay{
-        inset: 1;
+    .overlay.open{
+        display: none;
     }
 }
 
