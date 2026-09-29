@@ -18,8 +18,8 @@ a{
 }
 
 :root{
-    --color-1: #f3f5f7;
-    --color-2: #bd2733;
+    --color-1: #F5F5F5;
+    --color-2: #133ba8;
 
 }
 
@@ -29,6 +29,14 @@ a{
 	font-style: normal;
 	font-display: swap;
 	src: url('./woff2/PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+    .arapey-regular {
+    font-family: "Arapey", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
 }
 
 body{
@@ -99,8 +107,9 @@ nav ul li:nth-child(2){
 }
 
 .hero .left .name{
+    font-family: 'Arapey';
     display: flex;
-    font-size: clamp(3.5rem, 7.5vw, 6rem);
+    font-size: clamp(3.5rem, 7.5vw, 6.5rem);
     font-weight: 500;
     letter-spacing: -2px;
 }
